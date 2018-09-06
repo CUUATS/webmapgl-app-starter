@@ -1,0 +1,45 @@
+{
+  "name": "@cuuats/webmapgl-app-starter",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Web Map GL App Starter",
+  "scripts": {
+    "build": "npx stencil build",
+    "start": "npx stencil build --dev --watch --serve",
+    "test": "jest",
+    "test.watch": "jest --watch"
+  },
+  "dependencies": {
+    "@cuuats/webmapgl": "^0.4.0",
+    "@ionic/core": "4.0.0-beta.5",
+    "@stencil/core": "^0.12.2",
+    "@stencil/sass": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CUUATS/webmapgl-app-starter.git"
+  },
+  "author": "CUUATS",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/CUUATS/webmapgl-app-starter"
+  },
+  "homepage": "https://github.com/CUUATS/webmapgl-app-starter",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}

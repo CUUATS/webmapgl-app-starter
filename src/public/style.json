@@ -1,0 +1,22 @@
+{
+  "version": 8,
+  "sources": {
+    "data": {
+      "type": "geojson",
+      "data": "/app/public/data.geojson"
+    }
+  },
+  "layers": [
+    {
+      "id": "data",
+      "type": "circle",
+      "source": "data",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "paint": {
+        "circle-color": "#FF0000",
+        "circle-radius": 10
+      }
+    }
+  ]
+}
